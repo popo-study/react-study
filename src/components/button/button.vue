@@ -1,6 +1,7 @@
 <template>
     <button
     type="button"
+    :class="className"
     @click="$emit('btn-click', resData)"
     >
         <i>{{buttonName}}</i>
@@ -10,6 +11,10 @@
 <script>
 export default {
     props: {
+        className: {
+          type: String,
+          default: 'normal-btn'  
+        },
         buttonName: {
         type: String,
         default: ''
@@ -17,9 +22,18 @@ export default {
     },
     data: function() {
         return {
-            resData: '내가 컴포넌트 버튼이다.'
+            resData: 'private-btn'
         }
     },
     computed: {}
 }
 </script>
+
+<style>
+.normal-btn {
+    background-color: red;
+}
+.private-btn {
+    background-color: white;
+}
+</style>

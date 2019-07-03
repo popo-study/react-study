@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <v-button @btn-click="btnClick" :buttonName="name"></v-button>
+    <v-button 
+    @btn-click="btnClick" 
+    :class="btnClass"
+    :buttonName="name">
+    </v-button>
   </div>
 </template>
 
@@ -11,12 +15,17 @@ export default {
   name: 'app',
   data() {
     return {
-      name: 'button'
+      name: 'button',
+      btnClass: ''
     };
   },  
   methods: {
-    btnClick(res) {
-      alert(res);
+    btnClick(data) {
+      if(this.btnClass==''){
+        this.btnClass = data;
+      }else{
+        this.btnClass = '';
+      }
     }
   },
   components: {}
