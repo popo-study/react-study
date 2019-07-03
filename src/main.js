@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import base from './components/base';
+import baseComponent from './components/baseComponent';
 
 Vue.config.productionTip = false
-Vue.mixin(base);
+Vue.mixin(baseComponent);
 
 new Vue({
   render: h => h(App),

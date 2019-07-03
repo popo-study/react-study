@@ -1,8 +1,7 @@
 import VButton from './button/button';
 
 export default {
-    name: 'base',
-    data: {},
+    name: 'baseComponent',
     components: {
         VButton
     }    

@@ -20,7 +20,7 @@ export default {
         default: ''
         }
     },
-    data: function() {
+    data() {
         return {
             resData: 'private-btn'
         }

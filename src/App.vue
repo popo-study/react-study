@@ -20,9 +20,9 @@ export default {
     };
   },  
   methods: {
-    btnClick(data) {
+    btnClick(className) {
       if(this.btnClass==''){
-        this.btnClass = data;
+        this.btnClass = className;
       }else{
         this.btnClass = '';
       }
