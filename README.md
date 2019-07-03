@@ -1,29 +1,23 @@
 # popo
 
-## Project setup
+## VUE-CLI 연습
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+2019-07-03 컴포넌트 생성 및 바인딩하여 클래스 변경 
 ```
 
-### Compiles and minifies for production
+## 명령어 정리
 ```
-npm run build
+1. Project setup -> npm install
+
+2. Compiles and hoy-reloads for development -> npm run serve 
+
+3. Compiles and minifies for production -> npm run build
+
+4. run your tests code -> npm run test
+
+5. Lints and fixed files -> npm run lint
 ```
 
-### Run your tests
-```
-npm run test
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
