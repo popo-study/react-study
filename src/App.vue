@@ -1,44 +1,17 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <v-button 
-    @btn-click="btnClick" 
-    :class="btnClass"
-    :buttonName="name">
-    </v-button>
+  <div>
+    <router-view />
   </div>
 </template>
 
 <script>
-
+//var g_isPostBack = false;
 export default {
   name: 'app',
   data() {
-    return {
-      name: 'button',
-      btnClass: ''
-    };
+    return {};
   },  
-  methods: {
-    btnClick(className) {
-      if(this.btnClass==''){
-        this.btnClass = className;
-      }else{
-        this.btnClass = '';
-      }
-    }
-  },
-  components: {}
-}
+  methods: {},
+  created() {}
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
