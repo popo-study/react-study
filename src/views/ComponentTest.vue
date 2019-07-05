@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <img alt="Vue logo" src="../../public/assets/logo.png">
     <v-button 
     @btn-click="btnClick" 
@@ -12,7 +12,7 @@
 <script>
 
 export default {
-  name: 'app',
+  name: 'component_test',
   data() {
     return {
       name: 'button',

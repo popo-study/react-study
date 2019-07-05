@@ -9,6 +9,12 @@ var router = new Router({
   base: 'http://localhost:8080', //설정해줘야함.
   routes: [
     {
+      path: '/',
+      name: 'main_page',
+      meta: { authRequired: true },
+      component: () => import('./views/main/Main.vue')
+    },
+    {
       path: '/store_test',
       name: 'store_test',
       component: () => import('./views/StoreTest.vue')
