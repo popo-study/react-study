@@ -9,10 +9,21 @@
               {{index}} - {{menu.title}}
           </li>
       </ul>
+      <ul>
+          <li 
+          v-for="(test, index) in testList" 
+          :key="test.seq" 
+          >
+              {{index}} - {{test.id}} - {{test.name}}
+          </li>
+      </ul>
   </div>
 </template>
 
 <script>
+
+import {mapGetters} from 'vuex';
+
 export default {
   name: "main_page",
   data() {
@@ -28,6 +39,8 @@ export default {
           this.$router.push({name: data.link});
       }
   },
-  computed: {}
+  computed: {
+    ...mapGetters(['testList'])
+  }
 };
 </script>

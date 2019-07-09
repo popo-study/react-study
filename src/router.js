@@ -6,7 +6,7 @@ Vue.use(Router);
 
 var router = new Router({
   mode: 'history',
-  base: 'http://localhost:8080', //설정해줘야함.
+  base: '', //설정해줘야함.
   routes: [
     {
       path: '/',
