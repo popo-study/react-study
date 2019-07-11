@@ -1,8 +1,10 @@
-import VButton from './button/button';
+import VButton from './button/Button';
+import VSearch from './search/Search';
 
 export default {
     name: 'baseComponent',
     components: {
-        VButton
+        VButton,
+        VSearch
     }    
 }
