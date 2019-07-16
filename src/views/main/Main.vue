@@ -21,6 +21,8 @@
       :component-data="componentData"
       >
       </v-search>
+      <v-table>
+      </v-table>
   </div>
 </template>
 
